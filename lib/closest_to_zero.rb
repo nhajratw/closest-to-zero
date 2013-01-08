@@ -3,7 +3,7 @@ class ClosestToZeroCalculator
     ctz = nil
 
     list.each do |num|
-      if ctz.nil? || num.abs < ctz
+      if ctz.nil? || num.abs < ctz.abs
         ctz = num
       end
     end

@@ -17,4 +17,14 @@ describe ClosestToZeroCalculator do
     closest = calc.closest([-2, -4, -6, -8])
     closest.should == -2
   end
+
+  it "returns the closest positive" do
+    closest = calc.closest([-2, 1, -6, -8])
+    closest.should == 1
+  end
+
+  it "returns the closest negative" do
+    closest = calc.closest([-2, 3, -6, -8])
+    closest.should == -2
+  end
 end
